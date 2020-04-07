@@ -1,0 +1,18 @@
+def self_similarity_matrix(feature_vectors)
+
+train_hmm_compute_statistics(features, labels)
+
+hmm_segmentation(audio_file, hmm_model_name, plot_results=False,
+                     gt_file="")
+
+ mid_term_file_classification
+
+silence_removal
+
+speaker_diarization
+
+
+
+
+
+https://github.com/tyiannak/pyAudioAnalysis/blob/master/pyAudioAnalysis/audioSegmentation.py

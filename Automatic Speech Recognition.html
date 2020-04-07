@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<!-- saved from url=(0052)https://www.cse.iitb.ac.in/~pjyothi/cs753/index.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Automatic Speech Recognition</title>
+
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="coursepage, iitb">
+    <meta name="author" content="">
+    
+    <meta name="description" content="">
+    <!--<link href='https://fonts.googleapis.com/css?family=Inconsolata:400,700' rel='stylesheet' type='text/css'>-->
+	<!--<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet" type="text/css">-->
+    <link rel="alternate" type="application/rss+xml" title="CS753" href="https://www.cse.iitb.ac.in/feed.xml">
+    <link rel="stylesheet" href="./Automatic Speech Recognition_files/main.css">
+    
+</head>
+<body data-gr-c-s-loaded="true">
+    <div class="wrapper">
+        <div class="navbar container">
+            <a id="author-name" class="alignable pull-left" href="https://www.cse.iitb.ac.in/~pjyothi/cs753/index.html">Automatic Speech Recognition, Autumn 2019</a>
+        </div>
+        <div style="clear:both"></div>
+        <hr>
+        
+            <div class="container content">
+                <h2 id="about-me">Course Description</h2>
+
+<p><img class="profile-picture" src="./Automatic Speech Recognition_files/pic.jpg"></p>
+
+CS753 is a graduate-level CSE elective that offers an in-depth introduction to automatic speech recognition (ASR), the problem of automatically converting speech into text. This class will cover many theoretical and practical aspects of machine learning (ML) techniques that are employed in large-scale ASR systems. Apart from teaching classical algorithms that form the basis of statistical speech recognition, this class will also cover the latest deep learning techniques that have made important advances in achieving state-of-the-art results for speech recognition and related problems in spoken language processing. 
+<br>
+
+<p></p> <p><b>Who can take this course:</b> This course is open to 3rd and 4th year B.Tech., M.Tech. and Ph.D. students, who have passed a formal course in ML (offered by either the CSE, EE or IEOR department). If you do not satisfy the above criteria and are keen on taking this course, please email me at pjyothi [at] cse [dot] iitb [dot] ac [dot] in. </p>
+
+<p><b>Audit requirements:</b> To audit this course, students will have to complete all the assignments/quizzes and score at least 40% on each of them.</p>
+
+<!--</p> <p style="color:blue"> This course is open to any non-CSE undergraduate student who wants to do a minor in CSE. There are no prerequisites. </p>-->
+
+<h2 id="course-info">Course Info</h2>
+
+<p> <b>Time:</b> Tuesdays, Fridays, 2 pm to 3.25 pm<br>
+<b> Venue:</b> <span style="color:blue">LH 102</span><br>
+<b> Instructor: </b> <a href="https://www.cse.iitb.ac.in/~pjyothi">Preethi Jyothi</a><br>
+</p><hr>
+<b> TAs: </b> <br> Vinit Unni (email: vinit [at] cse.iitb.ac.in) <br> Saiteja Nalla (email: saitejan [at] cse.iitb.ac.in) <br> Debayan BandyoPadhyay (email: debayan [at] cse.iitb.ac.in) <br> Naman Jain (email: namanjain [at] cse.iitb.ac.in) <br>
+<b> Instructor office hours: </b> Scheduled on demand <br> <br>
+<!--<b> TA office hours:</b> Wednesdays 10am to 12 pm (402, new CSE building)<br/>-->
+<p></p>
+
+<h2 id="projects">Course grading</h2>
+
+<blockquote>
+  <p>All assignments should be completed individually. No form of collaboration is allowed unless explicitly permitted by the instructor. Anyone deviating from these standards of academic integrity will be reported to the department's disciplinary committee.</p><p>
+
+</p></blockquote>
+
+<ol>
+<h4><em>Subject to revision (depending on class strength)</em></h4>
+<li>Three assignments OR Two assignments + 1 Quiz (<strong>35%</strong>) </li> 
+<li>Midsem exam (<strong>15%</strong>) </li>
+<li>Project (<strong>20%</strong>) </li>
+<li>Final exam (<strong>25%</strong>) </li>
+<li>Participation (<strong>5%</strong>) </li>
+</ol>
+
+<h2 id="teaching">Schedule</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Date</th>
+      <th>Title</th>
+      <th>Summary slides</th>
+      <th>Reading</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>July 30</td>
+      <td>Introduction to Statistical Speech Recognition</td>
+	  <td><a href="https://www.cse.iitb.ac.in/~pjyothi/cs753/slides/lecture1.pdf">Lecture 1</a></td>
+	  <td>S. Young, <a href="http://csl.anthropomatik.kit.edu/downloads/vorlesungsinhalte/MMMK-Young_1996.LVCSR_Review.pdf">Large vocabulary continuous speech recognition: A review</a>, IEEE Signal Processing Magazine, 1996. <br> <span style="color:blue">(For a refresher in ML basics, go through Part I <a href="http://www.deeplearningbook.org/">here</a>).</span></td>
+    </tr>
+    <tr>
+      <td>Aug 6</td>
+      <td>HMMs for Acoustic Modeling (Part 1)</td>
+	  <td><a href="https://www.cse.iitb.ac.in/~pjyothi/cs753/slides/lecture2.pdf">Lecture 2</a></td>
+	  <td><span style="color:blue"> [JM-2019]</span>, <a href="https://web.stanford.edu/~jurafsky/slp3/A.pdf">Hidden Markov models</a><br>L. Rabiner, <a href="https://www.cse.iitb.ac.in/~pjyothi/cs753/rabiner_tutorial.pdf">A Tutorial on Hidden Markov Models and Selected Applications in Speech Recognition</a>, 1989.</td>
+    </tr>
+    <tr>
+      <td>Aug 9</td>
+      <td>HMMs for Acoustic Modeling (Part 2)</td>
+	  <td><a href="https://www.cse.iitb.ac.in/~pjyothi/cs753/slides/lecture3.pdf">Lecture 3</a></td>
+	  <td><span style="color:blue"> [JM-2019]</span>, <a href="https://web.stanford.edu/~jurafsky/slp3/A.pdf">Hidden Markov models</a><br>J. Bilmes, <a href="http://melodi.ee.washington.edu/people/bilmes/mypapers/em.pdf">A gentle tutorial of the EM algorithm and its application to Gaussian-mixture HMMs</a>, 1998.</td>
+    </tr>
+    <tr>
+      <td>Aug 13</td>
+      <td>HMMs and WFSTs</td>
+	  <td><a href="https://www.cse.iitb.ac.in/~pjyothi/cs753/slides/lecture4.pdf">Lecture 4 (pdf)</a> and <a href="https://www.cse.iitb.ac.in/~pjyothi/cs753/slides/lecture4">(html)</a></td>
+	  <td><span style="color:blue">(Read Sections 2.1-2.3 and 3)</span> M. Mohri, F. Pereira, M. Riley, <a href="http://www.cs.nyu.edu/~mohri/pub/hbka.pdf">Speech recognition with weighted finite-state transducers</a>, Springer Handbook of Speech Processing, 559-584, 2008. <br> <span style="color:blue">[Additional reading]</span> M. Mohri, F. Pereira, M. Riley, <a href="http://www.cs.nyu.edu/~mohri/pub/tcs2.pdf">The Design Principles of a Weighted Finite-State Transducer Library</a>, Theoretical Computer Science, 231(1): 17-32, 2000. 
+	</td></tr>
+    <tr>
+	  <td>Aug 16</td>
+      <td>WFSTs continued</td>
+	  <td><a href="https://www.cse.iitb.ac.in/~pjyothi/cs753/slides/lecture5.pdf">Lecture 5 (pdf)</a> and <a href="https://www.cse.iitb.ac.in/~pjyothi/cs753/slides/lecture5">(html)</a></td>
+	  <td><span style="color:blue">[Additional reading]</span> M. Mohri, <a href="http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.120.5405&amp;rep=rep1&amp;type=pdf">Semiring frameworks and algorithms for shortest-distance problems</a>, Journal of Automata, Languages and Combinatorics, 7(3):321-350, 2002. </td>
+	</tr>
+    <tr>
+	  <td>Aug 20</td>
+      <td>WFSTs for ASR + Basics of speech production</td>
+	  <td><a href="https://www.cse.iitb.ac.in/~pjyothi/cs753/slides/lecture6.pdf">Lecture 6</a></td>
+	  <td>M. Mohri, F. Pereira, M. Riley, <a href="https://cs.nyu.edu/~mohri/postscript/csl01.pdf">Weighted finite-state transducers in speech recognition</a>, Computer Speech and Language, 2001. </td>
+	</tr>
+	<tr>
+	  <td>Aug 23</td>
+      <td>Tied-state HMMs + Introduction to NN-based AMs</td>
+	  <td><a href="https://www.cse.iitb.ac.in/~pjyothi/cs753/slides/lecture7.pdf">Lecture 7</a></td>
+	  <td>S. J. Young, J. J. Odell, P. C. Woodland, <a href="http://www.aclweb.org/anthology/H94-1062">Tree-Based state tying for high accuracy acoustic modelling</a>, Proc. of the workshop of HLT, ACL, 1994.<br> <span style="color:blue">[Useful reading]</span> J. Zhao, X. Zhang, A. Ganapathiraju, N. Deshmukh, and J. Picone, <a href="https://www.cse.iitb.ac.in/~pjyothi/cs753/TiedstateHMMs.pdf">Tutorial for Decision Tree-Based State Tying For Acoustic Modeling</a>, 1999. 
+	  </td>
+	</tr>
+	<tr>
+	  <td>Aug 27</td>
+	  <td>Neural network-based acoustic modeling <br>(Hybrid/Tandem/TDNN models)</td>
+	  <td><a href="https://www.cse.iitb.ac.in/~pjyothi/cs753/slides/lecture8.pdf">Lecture 8</a></td>
+	  <td>N. Morgan and H. A. Bourlard <a href="https://www.cse.iitb.ac.in/~pjyothi/cs753/hybrid.pdf">An Introduction to Hybrid HMM/Connectionist Continuous Speech Recognition</a>, 1995. <br> H. Hermansky, D. Ellis, and S. Sharma, <a href="http://www1.icsi.berkeley.edu/~dpwe/research/pubs/nn-for-hmm.pdf">Tandem Connectionist Feature Extraction for Conventional HMM Systems</a>, ICASSP, 2000. <br> V. Peddinti, D. Povey, S. Khudanpur, <a href="https://www.danielpovey.com/files/2015_interspeech_multisplice.pdf">A time delay neural network architecture for efficient modeling of longtemporal contexts</a>, Interspeech, 2015.
+	  </td>
+	</tr>
+	<tr>
+	  <td>Aug 30</td>
+	  <td>Intro to RNN-based models + Language modeling (Part I)</td>
+	  <td><a href="https://www.cse.iitb.ac.in/~pjyothi/cs753/slides/lecture9.pdf">Lecture 9</a></td>
+	  <td><span style="color:blue"> [JM-2019]</span>, <a href="https://web.stanford.edu/~jurafsky/slp3/3.pdf">"N-gram Language Models"</a> <br> A. Graves, A. Mohamed, G. Hinton, <a href="https://www.cs.toronto.edu/~graves/icassp_2013.pdf">Speech recognition with deep recurrent neural networks</a>, ICASSP 2013.  
+	</td></tr>
+	<tr>
+		<td>Sept 3</td>
+		<td>Language modeling (Part II)</td>
+	    <td><a href="https://www.cse.iitb.ac.in/~pjyothi/cs753/slides/lecture10.pdf">Lecture 10 (pdf)</a> and <a href="https://www.cse.iitb.ac.in/~pjyothi/cs753/slides/lecture10">(html)</a></td>
+		<td> <span style="color:blue"> [JM-2019]</span>, <a href="https://web.stanford.edu/~jurafsky/slp3/3.pdf">"N-gram Language Models"</a> <br> S. F. Chen, J. Goodman, <a href="http://u.cs.biu.ac.il/~yogo/courses/mt2013/papers/chen-goodman-99.pdf">An empirical study of smoothing techniques for language modeling</a>, Computer Speech and Language, 13, pp. 359-394, 1999.
+		</td>
+	</tr>
+	<tr>
+		<td>Sept 13</td>
+		<td>Pre-midsem Revision</td>
+	    <td><a href="https://www.cse.iitb.ac.in/~pjyothi/cs753/slides/lecture11.pdf">Lecture 11</a></td>
+		<td>-</td>
+	</tr>
+	<tr>
+		<td>Sept 24</td>
+		<td>(R)NN-based language models</td>
+	    <td><a href="https://www.cse.iitb.ac.in/~pjyothi/cs753/slides/lecture12.pdf">Lecture 12</a></td>
+		<td> Papers mentioned in the slides </td>  
+	</tr>
+	<tr>
+		<td>Sept 27</td>
+		<td>Acoustic feature analysis for ASR</td>
+	    <td><a href="https://www.cse.iitb.ac.in/~pjyothi/cs753/slides/lecture13.pdf">Lecture 13</a></td>
+		<td>Shared via Moodle</td>  
+	</tr>
+	<tr>
+		<td>Oct 4</td>
+		<td>End-to-end neural architectures for ASR</td>
+	    <td><a href="https://www.cse.iitb.ac.in/~pjyothi/cs753/slides/lecture14.pdf">Lecture 14</a></td>
+	    <td>A. Graves, N. Jaitly, <a href="http://jmlr.org/proceedings/papers/v32/graves14.pdf">Towards End-to-end Speech Recognition with Recurrent Neural Networks</a>, ICML, 2014. <br>
+			Awni Hannun, <a href="https://distill.pub/2017/ctc/">Sequence modeling with CTC</a>, 2017.
+		</td>
+	</tr>
+	<tr>
+		<td>Oct 9</td>
+		<td>End-to-end neural architectures for ASR</td>
+	    <td><a href="https://www.cse.iitb.ac.in/~pjyothi/cs753/slides/lecture15.pdf">Lecture 15</a></td>
+		<td>W. Chan, N. Jaitly, Q. V. Le, O. Vinyals, <a href="https://arxiv.org/abs/1508.01211">Listen, Attend and Spell</a>, 2015. </td>
+	</tr>
+	<tr>
+		<td>Oct 11</td>
+		<td>Search and Decoding</td>
+	    <td><a href="https://www.cse.iitb.ac.in/~pjyothi/cs753/slides/lecture16.pdf">Lecture 16</a></td>
+		<td>D. Jurafsky, J. H. Martin, Speech and Language Processing, 1st edition, Chapter 10. (Shared via Moodle.)</td> 
+	</tr>
+	<tr>
+		<td>Oct 15</td>
+		<td>Search and Decoding (Part II)</td>
+	    <td><a href="https://www.cse.iitb.ac.in/~pjyothi/cs753/slides/lecture17.pdf">Lecture 17</a></td>
+		<td>D. Jurafsky, J. H. Martin, Speech and Language Processing, 1st edition, Chapter 10. (Shared via Moodle.)</td> 
+	</tr>
+	<tr>
+		<td>Oct 18</td>
+		<td>Multilingual and low-resource ASR</td>
+	    <td><a href="https://www.cse.iitb.ac.in/~pjyothi/cs753/slides/lecture18.pdf">Lecture 18</a></td>
+		<td> Papers mentioned in the slides </td>  
+	</tr>
+	<tr>
+		<td>Oct 22</td>
+		<td>Speech Synthesis</td>
+	    <td><a href="https://www.cse.iitb.ac.in/~pjyothi/cs753/slides/lecture19.pdf">Lecture 19</a></td>
+		<td> Papers mentioned in the slides </td>  
+	</tr>
+	<tr>
+		<td>Oct 25</td>
+		<td>Convolutional Neural Networks in Speech</td>
+	    <td><a href="https://www.cse.iitb.ac.in/~pjyothi/cs753/slides/lecture20.pdf">Lecture 20</a></td>
+		<td> Papers mentioned in the slides </td>  
+	</tr>
+	<tr>
+		<td>Nov 1</td>
+		<td>Speaker Adaptation</td>
+	    <td><a href="https://www.cse.iitb.ac.in/~pjyothi/cs753/slides/lecture21.pdf">Lecture 21</a></td>
+		<td> Papers mentioned in the slides </td>  
+	</tr>
+	<tr>
+		<td>Nov 5</td>
+		<td>Discriminative Training</td>
+	    <td><a href="https://www.cse.iitb.ac.in/~pjyothi/cs753/slides/lecture22.pdf">Lecture 22</a></td>
+		<td> Papers mentioned in the slides </td>  
+	</tr>
+	<tr>
+		<td>Nov 8</td>
+		<td>GANs + Practice questions for the final</td>
+	    <td><a href="https://www.cse.iitb.ac.in/~pjyothi/cs753/slides/lecture23.pdf">Lecture 23</a></td>
+		<td>Papers mentioned in the slides </td>  
+	</tr>
+  </tbody>
+</table>
+
+<h2 id="resources">Course Project</h2>
+
+For the final project, students are expected to work in groups of two or three. There will be a preliminary project evaluation phase, followed by the final evaluation; the latter will involve a project presentation and a detailed final report. Here are all the <a href="https://docs.google.com/spreadsheets/d/1Qd2FOkX5KxxL6-l4PjiFezBY-61cNbQ9ra7dmvy-u38/edit">project abstracts</a> from an old offering of the course.
+
+<br><br> Projects can be on any topic related to spoken language processing. (Projects on audio signal processing will also be permitted.) Every project should have a significant machine learning component. Students can also choose to reimplement techniques from prior work, after consulting with the instructor. 
+
+<br><br>Click <a href="http://www.ee.columbia.edu/~dpwe/sounds/">here</a> for a list of freely available small sound examples. Here is <a href="http://www.openslr.org/resources.php">another list</a> of open speech and language resources.
+
+<h2 id="resources">Resources</h2>
+
+<!--There is no prescribed textbook for this course.-->
+All the suggested readings will be freely available online. No single textbook will serve as a reference for this course. (<span style="color:blue"> [JM-2019]</span> is a good starting point for anyone interested in this material.) 
+<ol>
+	<li>Daniel Jurafsky and James H. Martin, <a href="https://web.stanford.edu/~jurafsky/slp3/ed3book.pdf">"Speech and Language Processing"</a>, 3rd edition draft, 2019 <span style="color:blue"> [JM-2019]</span></li>
+	<li>Mark Gales and Steve Young, <a href="http://mi.eng.cam.ac.uk/~mjfg/mjfg_NOW.pdf">The application of hidden Markov models in speech recognition</a>, Foundations and Trends in Signal Processing, 1(3):195-304, 2008.</li>
+	<li>Geoffrey Hinton, Li Deng, Dong Yu, George E. Dahl, Abdel-rahman Mohamed, Navdeep Jaitly, Andrew Senior, Vincent Vanhoucke, Patrick Nguyen, Tara N. Sainath, and Brian Kingsbury, <a href="http://ieeexplore.ieee.org/document/6296526/">Deep Neural Networks for Acoustic Modeling in Speech Recognition</a>, IEEE Signal Processing Magazine, 29(6):82-97, 2012.</li>
+</ol>
+
+<hr>
+
+<p style="text-align:right">Website credit: This is based on a <a href="https://jekyllrb.com/">Jekyll</a> template.</p> <p style="text-align:right">Title image: <a href="https://www.flickr.com/photos/kurioso/3055472826">Google iPhone Voice Search: Comic/Animation</a> (CC by 2.0) by Kevin Cheng.</p>
+            </div>
+        
+    </div>
+    
+   
+
+
+
+<div id="fatkun-drop-panel">
+        <a id="fatkun-drop-panel-close-btn">×</a>
+            <div id="fatkun-drop-panel-inner">
+                <div class="fatkun-content">
+                    <svg class="fatkun-icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="5892"><path d="M494.933333 782.933333c2.133333 2.133333 4.266667 4.266667 8.533334 6.4h8.533333c6.4 0 10.666667-2.133333 14.933333-6.4l2.133334-2.133333 275.2-275.2c8.533333-8.533333 8.533333-21.333333 0-29.866667-8.533333-8.533333-21.333333-8.533333-29.866667 0L533.333333 716.8V128c0-12.8-8.533333-21.333333-21.333333-21.333333s-21.333333 8.533333-21.333333 21.333333v588.8L249.6 475.733333c-8.533333-8.533333-21.333333-8.533333-29.866667 0-8.533333 8.533333-8.533333 21.333333 0 29.866667l275.2 277.333333zM853.333333 874.666667H172.8c-12.8 0-21.333333 8.533333-21.333333 21.333333s8.533333 21.333333 21.333333 21.333333H853.333333c12.8 0 21.333333-8.533333 21.333334-21.333333s-10.666667-21.333333-21.333334-21.333333z" p-id="5893"></path></svg>
+                    <div class="fatkun-title">Drag and Drop</div>
+                    <div class="fatkun-desc">The image will be downloaded</div>
+                </div>
+            </div>
+    </div></body></html>
